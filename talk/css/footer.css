@@ -1,0 +1,47 @@
+
+.card-login .footer{
+  color: #8d8d8d;
+}
+
+footer{
+  display: block;
+  font-size: .8rem;
+  color: white;
+}
+.bg-info{
+  background-color: rgb(53, 53, 53);
+}
+.bg-light{
+  background-color: #f1f1f1;
+}
+footer .info-company{
+  display: flex;
+  flex-direction: column;
+}
+footer .info-company .content-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .info-company .content-col span.separator{
+  display: none;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media (min-width:960px){
+  footer .info-company .content-col span.separator{
+    display:block;
+  }
+}
+
+@media (min-width:960px){
+  footer .info-company .content-col{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-items: center;
+  }
+}

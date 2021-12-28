@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+  <link rel="apple-touch-icon-precomposed" href="./image/TALKIDS_LOGO_ICON_1.svg">
+</head>
+
+<body class="scrollbar">
+
+  <div class="container-xl p-4">
+    <a href="./index.html">
+      <img src="./image/index-icon-svg.svg" alt="logo" height="35">
+    </a>
+  </div>
+
+
+  <!-- <div class="auth-fluid-bg">
+    <img src="./image/login-join-bg.svg" alt="toys">
+  </div> -->
+
+
+  <div class="auth-fluid px-4 pt-6">
+    <section class="card-login">
+      <!-- TITLE -->
+      <h1 class="py-3"> 회원가입 </h1>
+      <div class="text-right">
+        <span>
+          혹시, 회원이신가요?
+          <a class="text-bold" href="./login.html">로그인</a>
+        </span>
+      </div>
+      <!-- id -->
+      <div class="input-group mb-3 mt-2">
+        <input type="email" placeholder="아이디(이메일)입력" class="input-set input-group-text" required data-val="true"
+          data-val-required="아이디(이메일)를 입력하여 주세요" id="Input.Email" value="">
+      </div>
+      <!-- password -->
+      <div class="input-group mb-3">
+
+        <input type="password" placeholder="비밀번호 입력" class="input-set input-group-text bottom-line-none" required daata-val="true"
+          data-val-required="비밀번호를 입력해주세요." name="Input_Password" id="Input_Password">
+
+        <input type="password" placeholder="비밀번호 확인" class="input-set input-group-text" required daata-val="true"
+          data-val-required="비밀번호를 입력해주세요." name="Input_Password" id="Input_Password">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <input type="text" placeholder="연락처 : '-' 생략하여 입력해주세요." class="input-set input-group-text" data-val="true"
+          data-val-regex="'-' 생략하여 입력해주세요." data-val-regex-pattern="^[0-9]{11}|^[0-9]{10}$" id="Input_PhoneNumber"
+          name="Input.PhoneNumber" value="">
+      </div>
+      <!-- d-flex-between -->
+      <div class="w-100 d-flex-between mb-1">
+        <div class="d-flex-between">
+          <input type="checkbox" class="form-check-input" id="login-remember" data-val="true"
+            data-val-required="The 로그인 유지 field is required." name="Input.Rememberme" value="true">
+          <label for="login-remember" class="ml-1">이용약관에 동의합니다</label>
+        </div>
+        <!-- <div class="auth-footer-info">
+            <a href="#">비밀번호 찾기</a>
+          </div> -->
+      </div>
+
+      <div class="mb-3 mt-2 w-100">
+        <button type="submit" class="btn btn-primary btn-block"style="width: 100%;">가입하기</button>
+      </div>
+
+      <div class="d-flex-center flex-column">
+        <!-- SNS login -->
+        <div class=" d-flex d-flex-center flex-column">
+          <span class="text-gray">SNS 로그인</span>
+          <ul class="d-flex list-unstyled mt-2">
+            <li class="text-center" style="margin: 0;">
+              <a class="btn btn-xs" href="#">
+                <img src="./image/kakaoicon.svg" alt="kakao" height="50">
+              </a>
+            </li>
+            <li class="text-center" style="margin: 0;">
+              <a class="btn btn-xs" href="#">
+                <img src="./image/navericon.svg" alt="naver" height="50">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+</body>
+
+</html>
